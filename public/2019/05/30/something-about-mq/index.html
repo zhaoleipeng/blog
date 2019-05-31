@@ -2,19 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>标签: 创业 - 赵磊鹏的小站</title>
+<title>消息队列（一）：基础介绍 - 赵磊鹏的小站</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="赵磊鹏的小站">
-<meta property="og:url" content="https://zhaoleipeng.github.io/tags/创业/index.html">
+    <meta name="description" content="一.消息模型 点对点  消息生产者向消息队列中发送消息，只能被消费一次">
+<meta name="keywords" content="消息队列,设计">
+<meta property="og:type" content="article">
+<meta property="og:title" content="消息队列（一）：基础介绍">
+<meta property="og:url" content="https://zhaoleipeng.github.io/2019/05/30/something-about-mq/index.html">
 <meta property="og:site_name" content="赵磊鹏的小站">
+<meta property="og:description" content="一.消息模型 点对点  消息生产者向消息队列中发送消息，只能被消费一次">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zhaoleipeng.github.io/images/og_image.png">
+<meta property="og:updated_time" content="2019-05-31T07:24:53.669Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="赵磊鹏的小站">
+<meta name="twitter:title" content="消息队列（一）：基础介绍">
+<meta name="twitter:description" content="一.消息模型 点对点  消息生产者向消息队列中发送消息，只能被消费一次">
 <meta name="twitter:image" content="https://zhaoleipeng.github.io/images/og_image.png">
 
 
@@ -93,7 +98,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/og_image1.png" alt="赵磊鹏的小站" height="28">
+                <img src="/images/og_image1.png" alt="消息队列（一）：基础介绍" height="28">
             
             </a>
         </div>
@@ -137,56 +142,93 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">创业</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-24T08:02:12.000Z">2019-05-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/杂谈/">杂谈</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2019-05-30T02:02:41.000Z">2019-05-30</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 小时 读完 (大约 11378 个字)
+                    6 分钟 读完 (大约 921 个字)
                 </span>
                 
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
                 
             </div>
         </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/05/24/start-up-business/">创业的一些参考</a>
+                消息队列（一）：基础介绍
             
         </h1>
         <div class="content">
-            <p>今天的这篇文章从反常识的数据开始谈起，基于<strong>中国的机遇与优势、实体经济、改变偏见，下沉市场、海外市场，新金融时代</strong>等板块，展开对新商业文明时代的看法。<br></p>
+            <h2 id="一-消息模型"><a href="#一-消息模型" class="headerlink" title="一.消息模型"></a>一.消息模型</h2><ul>
+<li><strong>点对点</strong></li>
+</ul>
+<p>消息生产者向消息队列中发送消息，只能被消费一次</p>
+<p><img src="/images/发布订阅.png" alt></p>
+<a id="more"></a>
+<ul>
+<li><strong>发布/订阅</strong></li>
+</ul>
+<p>发布/订阅和观察者模式有以下不同</p>
+<ul>
+<li>观察者模式中，观察者和主题都知道对方的存在，而发布订阅模式中，生产者和消费者不知道对方的存在，他们通过频道通信</li>
+<li>观察者模式是同步的，当时间触发时，主题会调用观察者方法，然后等待方法返回。而发布与订阅模式是异步的，生产者向频道发送一个消息后，就不需要关心消费者何时去订阅这个消息，可以立即返回。</li>
+</ul>
+<p><img src="/images/发布订阅与观察者区别.png" alt></p>
+<h2 id="二-使用场景"><a href="#二-使用场景" class="headerlink" title="二.使用场景"></a>二.使用场景</h2><ul>
+<li><strong>异步处理</strong></li>
+</ul>
+<p>发送者将消息发送给消息队列之后，不需要同步等待消息接收者处理完毕，而是立即返回进行其它操作。消息接收者从消息队列中订阅消息之后异步处理。</p>
+<p>例如在注册流程中通常需要发送验证邮件来确保注册用户身份的合法性，可以使用消息队列使发送验证邮件的操作异步处理，用户在填写完注册信息之后就可以完成注册，而将发送验证邮件这一消息发送到消息队列中。</p>
+<p>只有在业务流程允许异步处理的情况下才能这么做，例如上面的注册流程中，如果要求用户对验证邮件进行点击之后才能完成注册的话，就不能再使用消息队列。</p>
+<p>后续可以添加更多的例子</p>
+<ul>
+<li><strong>流量削峰</strong></li>
+</ul>
+<p>在高并发的场景下，如果短时间有大量的请求到达会压垮服务器。</p>
+<p>可以将请求发送到消息队列中，服务器按照其处理能力从消息队列中订阅消息进行处理。</p>
+<ul>
+<li><strong>应用解耦</strong></li>
+</ul>
+<p>如果模块之间不直接进行调用，模块之间耦合度就会很低，那么修改一个模块或者新增一个模块对其它模块的影响会很小，从而实现可扩展性。</p>
+<p>通过使用消息队列，一个模块只需要向消息队列中发送消息，其它模块可以选择性地从消息队列中订阅消息从而完成调用。</p>
+<h2 id="可靠性"><a href="#可靠性" class="headerlink" title="可靠性"></a>可靠性</h2><ul>
+<li><strong>发送端的可靠性</strong></li>
+</ul>
+<p>发送端完成操作后一定能将消息成功发送到消息队列中。</p>
+<p>实现方法：在本地数据库建一张消息表，将消息数据与业务数据保存在同一数据库实例里，这样就可以利用本地数据库的事务机制。事务提交成功后，将消息表中的消息转移到消息队列中，若转移消息成功则删除消息表中的数据，否则继续重传。</p>
+<ul>
+<li><strong>接收端的可靠性</strong></li>
+</ul>
+<p>接收端能够从消息队列成功消费一次消息。</p>
+<p>两种实现方法：</p>
+<ul>
+<li>保证接收端处理消息的业务逻辑具有幂等性：只要具有幂等性，那么消费多少次消息，最后处理的结果都是一样的。</li>
+<li>保证消息具有唯一编号，并使用一张日志表来记录已经消费的消息编号。</li>
+</ul>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/05/24/start-up-business/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/消息队列/">消息队列</a>, <a class="has-link-grey -link" href="/tags/设计/">设计</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
@@ -196,7 +238,19 @@
 
 
 
-
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/05/24/redis-basic/">
+                <span class="level-item">REDIS（一）：基础介绍</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -693,7 +747,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/og_image1.png" alt="赵磊鹏的小站" height="28">
+                    <img src="/images/og_image1.png" alt="消息队列（一）：基础介绍" height="28">
                 
                 </a>
                 <p class="is-size-7">

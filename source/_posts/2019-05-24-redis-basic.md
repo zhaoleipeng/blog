@@ -1,5 +1,5 @@
 ---
-title: REDIS基础介绍
+title: REDIS（一）：基础介绍
 date: 2019-05-24 18:07:41
 tags: [ 数据库, redis ]
 categories: [ 技术 ]
@@ -453,7 +453,7 @@ Redis 将所有时间事件都放在一个无序链表中，通过遍历整个�
 
 事件调度与执行由 aeProcessEvents 函数负责，伪代码如下：
 
-``` cpp
+``` python
   def aeProcessEvents():
     # 获取到达时间离当前时间最接近的时间事件
     time_event = aeSearchNearestTimer()
@@ -474,7 +474,7 @@ Redis 将所有时间事件都放在一个无序链表中，通过遍历整个�
 
 将 aeProcessEvents 函数置于一个循环里面，加上初始化和清理函数，就构成了 Redis 服务器的主函数，伪代码如下：
 
-``` C
+``` python
   def main():
     # 初始化服务器
     init_server()
