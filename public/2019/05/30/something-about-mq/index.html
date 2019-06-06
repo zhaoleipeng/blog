@@ -7,19 +7,19 @@
 
 
 
-    <meta name="description" content="一.消息模型 点对点  消息生产者向消息队列中发送消息，只能被消费一次">
+    <meta name="description" content="一.消息模型 点对点消息生产者向消息队列中发送消息，只能被消费一次">
 <meta name="keywords" content="消息队列,设计">
 <meta property="og:type" content="article">
 <meta property="og:title" content="消息队列（一）：基础介绍">
 <meta property="og:url" content="https://zhaoleipeng.github.io/2019/05/30/something-about-mq/index.html">
 <meta property="og:site_name" content="赵磊鹏的小站">
-<meta property="og:description" content="一.消息模型 点对点  消息生产者向消息队列中发送消息，只能被消费一次">
+<meta property="og:description" content="一.消息模型 点对点消息生产者向消息队列中发送消息，只能被消费一次">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zhaoleipeng.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-05-31T07:24:53.669Z">
+<meta property="og:updated_time" content="2019-05-31T07:57:47.274Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="消息队列（一）：基础介绍">
-<meta name="twitter:description" content="一.消息模型 点对点  消息生产者向消息队列中发送消息，只能被消费一次">
+<meta name="twitter:description" content="一.消息模型 点对点消息生产者向消息队列中发送消息，只能被消费一次">
 <meta name="twitter:image" content="https://zhaoleipeng.github.io/images/og_image.png">
 
 
@@ -128,6 +128,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -149,11 +153,15 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-05-30T02:02:41.000Z">2019-05-30</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/技术/">技术</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    6 分钟 读完 (大约 921 个字)
+                    8 分钟 读完 (大约 1168 个字)
                 </span>
                 
                 
@@ -172,50 +180,61 @@
         </h1>
         <div class="content">
             <h2 id="一-消息模型"><a href="#一-消息模型" class="headerlink" title="一.消息模型"></a>一.消息模型</h2><ul>
-<li><strong>点对点</strong></li>
+<li><strong>点对点</strong><br>消息生产者向消息队列中发送消息，只能被消费一次</li>
 </ul>
-<p>消息生产者向消息队列中发送消息，只能被消费一次</p>
 <p><img src="/images/发布订阅.png" alt></p>
 <a id="more"></a>
 <ul>
-<li><strong>发布/订阅</strong></li>
+<li><strong>发布/订阅</strong>和观察者模式有以下不同</li>
 </ul>
-<p>发布/订阅和观察者模式有以下不同</p>
-<ul>
+<blockquote>
+<ol>
 <li>观察者模式中，观察者和主题都知道对方的存在，而发布订阅模式中，生产者和消费者不知道对方的存在，他们通过频道通信</li>
 <li>观察者模式是同步的，当时间触发时，主题会调用观察者方法，然后等待方法返回。而发布与订阅模式是异步的，生产者向频道发送一个消息后，就不需要关心消费者何时去订阅这个消息，可以立即返回。</li>
-</ul>
+</ol>
+</blockquote>
 <p><img src="/images/发布订阅与观察者区别.png" alt></p>
 <h2 id="二-使用场景"><a href="#二-使用场景" class="headerlink" title="二.使用场景"></a>二.使用场景</h2><ul>
-<li><strong>异步处理</strong></li>
-</ul>
-<p>发送者将消息发送给消息队列之后，不需要同步等待消息接收者处理完毕，而是立即返回进行其它操作。消息接收者从消息队列中订阅消息之后异步处理。</p>
+<li><p><strong>异步处理</strong><br>发送者将消息发送给消息队列之后，不需要同步等待消息接收者处理完毕，而是立即返回进行其它操作。消息接收者从消息队列中订阅消息之后异步处理。</p>
 <p>例如在注册流程中通常需要发送验证邮件来确保注册用户身份的合法性，可以使用消息队列使发送验证邮件的操作异步处理，用户在填写完注册信息之后就可以完成注册，而将发送验证邮件这一消息发送到消息队列中。</p>
 <p>只有在业务流程允许异步处理的情况下才能这么做，例如上面的注册流程中，如果要求用户对验证邮件进行点击之后才能完成注册的话，就不能再使用消息队列。</p>
-<p>后续可以添加更多的例子</p>
-<ul>
-<li><strong>流量削峰</strong></li>
-</ul>
-<p>在高并发的场景下，如果短时间有大量的请求到达会压垮服务器。</p>
+<p>后续可以添加更多的例子:</p>
+<p><code>日志处理</code><br><code>消息通讯（聊天室等）</code></p>
+</li>
+<li><p><strong>流量削峰</strong><br>在高并发的场景下，如果短时间有大量的请求到达会压垮服务器。</p>
 <p>可以将请求发送到消息队列中，服务器按照其处理能力从消息队列中订阅消息进行处理。</p>
-<ul>
-<li><strong>应用解耦</strong></li>
-</ul>
-<p>如果模块之间不直接进行调用，模块之间耦合度就会很低，那么修改一个模块或者新增一个模块对其它模块的影响会很小，从而实现可扩展性。</p>
+</li>
+<li><p><strong>应用解耦</strong><br>如果模块之间不直接进行调用，模块之间耦合度就会很低，那么修改一个模块或者新增一个模块对其它模块的影响会很小，从而实现可扩展性。</p>
 <p>通过使用消息队列，一个模块只需要向消息队列中发送消息，其它模块可以选择性地从消息队列中订阅消息从而完成调用。</p>
-<h2 id="可靠性"><a href="#可靠性" class="headerlink" title="可靠性"></a>可靠性</h2><ul>
-<li><strong>发送端的可靠性</strong></li>
+</li>
 </ul>
-<p>发送端完成操作后一定能将消息成功发送到消息队列中。</p>
+<h2 id="三-可靠性"><a href="#三-可靠性" class="headerlink" title="三.可靠性"></a>三.可靠性</h2><ul>
+<li><p><strong>发送端的可靠性</strong><br>发送端完成操作后一定能将消息成功发送到消息队列中。</p>
 <p>实现方法：在本地数据库建一张消息表，将消息数据与业务数据保存在同一数据库实例里，这样就可以利用本地数据库的事务机制。事务提交成功后，将消息表中的消息转移到消息队列中，若转移消息成功则删除消息表中的数据，否则继续重传。</p>
-<ul>
-<li><strong>接收端的可靠性</strong></li>
-</ul>
-<p>接收端能够从消息队列成功消费一次消息。</p>
+</li>
+<li><p><strong>接收端的可靠性</strong><br>接收端能够从消息队列成功消费一次消息。</p>
 <p>两种实现方法：</p>
-<ul>
-<li>保证接收端处理消息的业务逻辑具有幂等性：只要具有幂等性，那么消费多少次消息，最后处理的结果都是一样的。</li>
+</li>
+<li><p>保证接收端处理消息的业务逻辑具有幂等性：只要具有幂等性，那么消费多少次消息，最后处理的结果都是一样的。</p>
+</li>
 <li>保证消息具有唯一编号，并使用一张日志表来记录已经消费的消息编号。</li>
+</ul>
+<h2 id="四-优缺点"><a href="#四-优缺点" class="headerlink" title="四.优缺点"></a>四.优缺点</h2><ul>
+<li><p><strong>优点</strong><br>解耦: 每个成员不必受其他成员影响，可以更独立自主，只通过一个简单的容器来联系。<br>提速: 其实就是支持异步操作，能节约大量时间<br>广播: 新同伴新加入成本很低<br>削峰: 遇上突然的大量请求，只需要在多久时间内处理完成即可。</p>
+</li>
+<li><p><strong>缺点</strong><br>引入复杂度: 需要地方防止，也需要考虑安全性。<br>暂时的不一致性: 这个很好理解，并不等于放入队列就是执行完成。</p>
+<blockquote>
+<p>其实还存在失败的可能性，如果保证顺序执行，且还能重复执行就是另个比较深的问题了。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="五-应用场景"><a href="#五-应用场景" class="headerlink" title="五.应用场景"></a>五.应用场景</h2><ul>
+<li><p><strong>生产者不需要从消费者处获得反馈</strong></p>
+</li>
+<li><p><strong>容许暂时不一致性</strong></p>
+</li>
+<li><p><strong>产生副作用的效益高于成本</strong></p>
+</li>
 </ul>
 
         </div>
@@ -240,6 +259,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/06/06/database-basic/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">数据库基础概念</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -296,7 +322,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        5
                     </p>
                 </div>
             </div>
@@ -331,6 +357,32 @@
 </div>
     
         
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                目录
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#一-消息模型">
+        <span>一.消息模型</span>
+        </a></li><li>
+        <a class="is-flex" href="#二-使用场景">
+        <span>二.使用场景</span>
+        </a></li><li>
+        <a class="is-flex" href="#三-可靠性">
+        <span>三.可靠性</span>
+        </a></li><li>
+        <a class="is-flex" href="#四-优缺点">
+        <span>四.优缺点</span>
+        </a></li><li>
+        <a class="is-flex" href="#五-应用场景">
+        <span>五.应用场景</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
     
         
 
@@ -374,7 +426,7 @@
                 <span class="level-item">技术</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">3</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/日记/">
@@ -404,7 +456,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/创业/" style="font-size: 10px;">创业</a> <a href="/tags/思路/" style="font-size: 10px;">思路</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/消息队列/" style="font-size: 10px;">消息队列</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/观点/" style="font-size: 10px;">观点</a> <a href="/tags/设计/" style="font-size: 10px;">设计</a>
+        <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/创业/" style="font-size: 10px;">创业</a> <a href="/tags/思路/" style="font-size: 10px;">思路</a> <a href="/tags/数据库/" style="font-size: 20px;">数据库</a> <a href="/tags/消息队列/" style="font-size: 10px;">消息队列</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/观点/" style="font-size: 10px;">观点</a> <a href="/tags/设计/" style="font-size: 10px;">设计</a>
     </div>
 </div>
 
@@ -423,10 +475,23 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-06T09:24:27.000Z">2019-06-06</time></div>
+                    <a href="/2019/06/06/database-basic/" class="has-link-black-ter is-size-6">数据库基础概念</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术/">技术</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-30T02:02:41.000Z">2019-05-30</time></div>
                     <a href="/2019/05/30/something-about-mq/" class="has-link-black-ter is-size-6">消息队列（一）：基础介绍</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/技术/">技术</a>
                     </p>
                 </div>
             </div>
@@ -484,6 +549,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2019/06/">
+                <span class="level-start">
+                    <span class="level-item">六月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2019/05/">
                 <span class="level-start">
                     <span class="level-item">五月 2019</span>
@@ -531,7 +607,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/数据库/">
                         <span class="tag">数据库</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -590,10 +666,23 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-06T09:24:27.000Z">2019-06-06</time></div>
+                    <a href="/2019/06/06/database-basic/" class="has-link-black-ter is-size-6">数据库基础概念</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术/">技术</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-30T02:02:41.000Z">2019-05-30</time></div>
                     <a href="/2019/05/30/something-about-mq/" class="has-link-black-ter is-size-6">消息队列（一）：基础介绍</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/技术/">技术</a>
                     </p>
                 </div>
             </div>
@@ -651,6 +740,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2019/06/">
+                <span class="level-start">
+                    <span class="level-item">六月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2019/05/">
                 <span class="level-start">
                     <span class="level-item">五月 2019</span>
@@ -698,7 +798,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/数据库/">
                         <span class="tag">数据库</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 

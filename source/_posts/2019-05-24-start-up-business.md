@@ -22,8 +22,6 @@ toc: true
 
 去年，星巴克宣布将 700 万星巴克会员接入支付宝。基于这个数据，我做了一系列推理。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/ib4Yia2lBbLFCHbMrFFyKAibuM8PdDkVT93L1bSv64Qlazpyd8uewPGqQllU3QMvGHdL7CIGz8Sfic4gUDQ9j3U8Wg/640?wx_fmt=png)
-
 如果我们算每 7 个客户有一个开通会员，那么就是 4900 万，10 个里有 1 个是 7000 万。
 
 星巴克在上海的门店是最多的，500 家以上，这个城市 2500-3000 万的人口（含流动），三成喝过的话，是 900 万。
@@ -37,8 +35,6 @@ toc: true
 **② 50% 以上的中国人没有喝过农夫山泉**
 
 2016 年，农夫山泉的年销售额达到了 109.11 亿元，其中包含新产品和高端产品，桶装水，会议酒店供水等等。我一年可能要花 2400 元以上在农夫山泉上。
-
-![](https://mmbiz.qpic.cn/mmbiz_png/ib4Yia2lBbLFCHbMrFFyKAibuM8PdDkVT934WVnrreIKYOhaDVs3pln3mLTvgibquhsm8FyCEiat1pDVwibBFP0pZRNQ/640?wx_fmt=png)
 
 按照这个销售额计算，**假设客单价 20 元，那么只有 5 亿多人喝过农夫山泉。**
 
@@ -60,8 +56,6 @@ toc: true
 
 中国头等舱用户不超过 600 万，每年常旅客不超过 1500 万（年飞行超过 6 次的称为常旅客）。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/US10Gcd0tQFzl9pNnxlTUYicVjKEIjvHEW5wOdeFBQJoPNK19CA8niapOmbM3xSJOexryVYC6xSlic1412vwLHvIg/640)
-
 由此可以看出：在航空杂志投广告，其实就只有那 1500 万常旅客能看到。所以，航空业广告商做廉价产品是行不通的，只有针对那 1500 万人的产品和服务才能实现有效目的。
 
 国航的白金卡用户不超过 5 万人，听说东航不超过 5000 人（除了一些特殊渠道，一年盯着一个航空飞行 120 次经济舱，60 次商务舱，40 次洲际公务舱才能拿到这个白金卡）。
@@ -69,8 +63,6 @@ toc: true
 **⑥ 中国最大的便利店不是全家，而是中石化旗下的易捷便利店**
 
 每一个中石化加油站旁边都有一个易捷便利店。
-
-![](https://mmbiz.qpic.cn/mmbiz_jpg/ib4Yia2lBbLFCHbMrFFyKAibuM8PdDkVT93ia7dQgupjgR2YLmyssGULxh8ES6bdDfh9o4JkLYyyQtLXRfOYrm26ibg/640?wx_fmt=jpeg)
 
 目前是中国最大的便利店，有 25000 多家门店，《2018 中国便利店发展报告》显示，易捷便利店占全国便利店超过 20% 的份额，很难被超越。
 
@@ -136,8 +128,6 @@ toc: true
 
 基于大量的观察发现，现在农村里种地的人很少，并且几乎都是机械化种植，很多人会外出打工。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/ib4Yia2lBbLFCHbMrFFyKAibuM8PdDkVT93a8icmvjkkUWlEia5dYUDEaQPp0DHMIeWQvhEPB1uXX0ib3ClJCX422CUQ/640?wx_fmt=jpeg)
-
 但是在他们眼里，大城市不是他们的世界，老了还是要回去，因为老家还有地。只要想到自己有土地，他们吃再多苦，都是乐意的。
 
 **2. 90 后到 00 后的消费观发生很大变化**
@@ -159,8 +149,6 @@ toc: true
 **② 孤独催生商机**
 
 90 后比较懒，还有独生子女病，孤独将催生一大波的商机。
-
-![](https://mmbiz.qpic.cn/mmbiz_png/PB3VyBsxic6uR4caqOyQmx6TH6Ok3IMdGSXI7o3tQl4PnlnTQkgFr0TN5xl4PdDdK1L4AlANVAgveXtAk5K6ftg/640?wx_fmt=png)
 
 孤独的年轻人喜欢养动物，他们会带宠物去按摩和游泳，等到他们出差的时候，会找个宠物店寄养，一个不到 1 平方米的地方 1 天要花 300 块。
 
@@ -192,8 +180,6 @@ toc: true
 
 虽然 00 后存款只有 1840 元，但 90 后更少，只有 800 元（数据来源于腾讯最新的 00 后研究报告）。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/PB3VyBsxic6uR4caqOyQmx6TH6Ok3IMdGEYGnOG1tN8TLzHN2XQOxS6vBBzQK1PjSpVWRH579TF1uJ415adeKOQ/640?wx_fmt=png)
-
 **3.关于人口红利**
 
 我们总是很悲观地说人口红利没有了，其实只是分红方式发生了改变。
@@ -217,8 +203,6 @@ toc: true
 ## 四、在这里，改变偏见
 
 这里我们要分享一下看企业的方法论，我写了很多《在这里改变偏见》系列文章，看起来有的观点很出格，其实有一套严谨的体系。
-
-![](https://mmbiz.qpic.cn/mmbiz_png/PB3VyBsxic6uR4caqOyQmx6TH6Ok3IMdGdicZiaPm5ueibXc8nLibAnWiba9rbXeJpeGwItdicG2kHp7MkXUD5Y1Jn8Aw/640?wx_fmt=png)
 
 **1.看企业是有方法论的**
 
@@ -262,8 +246,6 @@ toc: true
 
 这里面两个事情最关键，**一是柔性供应链，二是精准投放。**没有这两点，男装定制依然是个小而美的生意。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/PB3VyBsxic6uR4caqOyQmx6TH6Ok3IMdGzZnOEvFnibUGSqNXKZezhCiaHLw8xeib8Gm4SWQCwcdy5ORj5ZjE09qfQ/640?wx_fmt=png)
-
 当我们说到亲子类的账号，我们认为亲子类账号就应该卖婴儿纸尿裤、儿童玩具。但有赞的朋友告诉我，有赞上卖得最好的是零食，是大人用的东西。
 
 为什么呢？因为大人每天被孩子折磨得很痛苦，所以晚上会买一点东西给自己吃。所以我们很多时候对用户的理解是错误的，是偏差的。
@@ -296,8 +278,6 @@ toc: true
 
 这些案例给我们提供了一个逻辑：**在不同的场景下可以做不同的事情，我们要大胆去思考很多问题。**
 
-**![](https://mmbiz.qpic.cn/mmbiz_png/PB3VyBsxic6uR4caqOyQmx6TH6Ok3IMdGFyUZ7XaZFmaWJpzBKeGRuJTudKp8vfgvYPWUqSOktPePCgC0iaMdAgA/640?wx_fmt=png)**
-
 
 
 ## 五、这是一个反智的时代
@@ -315,8 +295,6 @@ toc: true
 举个例子，我跟马英尧 (尚美生活 & OneZone 创始人) 探讨过很多次小镇青年、下沉市场。
 
 我们能写出 10 万 +、100 万 +，只能证明我们写东西的能力强、总结能力强、逻辑强，不能证明我们去小镇就能做生意，所以不要去做跟你能力模型无关的事情。
-
-![](https://mmbiz.qpic.cn/mmbiz_jpg/PB3VyBsxic6uR4caqOyQmx6TH6Ok3IMdG2KNoTLs4wZOgOSFQxw1S00JUPBZocB4q7PZ9ZB96PwKzfoW1kggWQA/640?wx_fmt=jpeg)
 
 不足够热爱的事情你就无法掌握、经营它的本质。一定要热爱，热爱的时候你才能发现别人发现不了的东西。
 
@@ -450,8 +428,6 @@ toc: true
 
 什么叫做优衣库化？优衣库最早进入美国市场的时候开在沃尔玛边上，因为开在乡下没有人买，觉得这是很 LOW。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/US10Gcd0tQGY9ddd5GpbmVRuaRfuaESAlyiaybaxhA7YTyAMDQSHjLERUGnUfB33Rtz7y9lhxTfYMNlPiaUyCRcw/640)
-
 优衣库是做怎么起来的？它把重金花在了最好的街头，开最好的旗舰店，打造一个中产阶级偏高的象征的东西和品质感，但是它的价格是偏低的。把快消品的功能性做成一种符号，一种腔调，才能赢得人心。
 
 **② 身份属性的产品奢侈品化**
@@ -476,8 +452,6 @@ toc: true
 
 今天很多大家电其实是属于耐耗品，一定要有信仰、有圈层。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/k9yr7pk4yTM5WItaGZ6nzIOs4yNY696kAbHM7NerNMq1J5JME8cX5ibnxllJ0PbbEcPEVPcAeBS8v6iaA8svA6vw/640?wx_fmt=png)
-
 **2.行业现象**
 
 **① 卤制品**
@@ -501,8 +475,6 @@ toc: true
 过去我们总认为纺织业已经没有任何利润了，这是错的，安踏毛利率 52.6%，净利率 24.9%。
 
 申洲国际做代工，毛利率 31.6%，净利率能达 24.8%，耐克是它最大的客户之一，都没它高。全球大多数的运动类顶级品牌都是它代工的。
-
-![](https://mmbiz.qpic.cn/mmbiz_png/k9yr7pk4yTM5WItaGZ6nzIOs4yNY696kUBWG9vAwwxUib6Wic0ibbelGUR96XrlEiaBeEySczqlfhq1JsEgS1SIzJg/640?wx_fmt=png)
 
 申洲国际告诉我们一件事，实体产业做到极致的时候，就拥有了话语权跟绝对优势。
 
@@ -563,8 +535,6 @@ Lululemon 给品牌赋予精神、赋予圈层感、赋予科技感。我在五�
 玖姿这个品牌的定位就是卖给小镇贵妇，就是下沉市场的中产女性的品牌。但是我打听了一圈，一线基本没人知道。
 
 在农村，80 寸电视机卖得非常好。但一线城市家里放不下 80 寸的电视机。因为中国一线的年轻人都是租的房子，没有客厅。
-
-![](https://mmbiz.qpic.cn/mmbiz_jpg/PB3VyBsxic6uR4caqOyQmx6TH6Ok3IMdGvZfJIPdWzJoYSKVRgRRo9zsDSAk2fVyuy1jmxFUjSiciak8Yyia3jHPSw/640?wx_fmt=jpeg)
 
 **4.存量改造是一门巨大的生意**
 
