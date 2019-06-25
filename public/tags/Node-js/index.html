@@ -2,14 +2,14 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>归档: 2019/6 - 赵磊鹏的小站</title>
+<title>标签: Node.js - 赵磊鹏的小站</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="赵磊鹏的小站">
-<meta property="og:url" content="https://zhaoleipeng.github.io/archives/2019/06/index.html">
+<meta property="og:url" content="https://zhaoleipeng.github.io/tags/Node-js/index.html">
 <meta property="og:site_name" content="赵磊鹏的小站">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zhaoleipeng.github.io/images/og_image.png">
@@ -136,75 +136,72 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-
-<div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        六月 2019
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-06-25T05:41:59.000Z">2019-06-25</time>
-                        <a href="/2019/06/25/node-schedule-read/" class="has-link-black-ter is-size-6">node-schedule的一些分析</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/技术/">技术</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-06-07T05:16:57.000Z">2019-06-07</time>
-                        <a href="/2019/06/07/database-more/" class="has-link-black-ter is-size-6">数据库基础概念 索引</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/技术/">技术</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-06-06T09:24:27.000Z">2019-06-06</time>
-                        <a href="/2019/06/06/database-basic/" class="has-link-black-ter is-size-6">数据库基础概念</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/技术/">技术</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Node.js</a></li>
+        </ul>
+        </nav>
     </div>
 </div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-06-25T05:41:59.000Z">2019-06-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/技术/">技术</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 分钟 读完 (大约 861 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/06/25/node-schedule-read/">node-schedule的一些分析</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="先介绍下这个包是干嘛的"><a href="#先介绍下这个包是干嘛的" class="headerlink" title="先介绍下这个包是干嘛的"></a>先介绍下这个包是干嘛的</h2><blockquote>
+<p><a href="https://github.com/node-schedule/node-schedule#readme" target="_blank" rel="noopener">node-schedule</a>是一个<br>A cron-like and not-cron-like job scheduler for Node</p>
+</blockquote>
+<p>这个包可以做到在node环境中实现定时触发某些任务的效果。</p>
+<p>使用方法在github文档里面都找的到我这里就不赘述了。</p>
+<h2 id="为啥会找到这个包"><a href="#为啥会找到这个包" class="headerlink" title="为啥会找到这个包"></a>为啥会找到这个包</h2><p>因为项目无法自动化。定时任务部分的设置，在上线的时候需要手动的在服务器的cron上面去设置，所以成为了自动化部署的阻碍。所以想要改变这种情形于是想起来之前同事推荐的这个库。<br></p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/06/25/node-schedule-read/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
 
 
 </div>

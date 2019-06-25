@@ -16,7 +16,7 @@
 <meta property="og:description" content="一、数据库事务的四个特性 ACIDAtomicity(原子性) Consistency(一致性) Isolution(隔离性) Durability(持久性)">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zhaoleipeng.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-06-06T09:53:04.886Z">
+<meta property="og:updated_time" content="2019-06-07T05:31:32.259Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库基础概念">
 <meta name="twitter:description" content="一、数据库事务的四个特性 ACIDAtomicity(原子性) Consistency(一致性) Isolution(隔离性) Durability(持久性)">
@@ -161,7 +161,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 700 个字)
+                    5 分钟 读完 (大约 699 个字)
                 </span>
                 
                 
@@ -190,13 +190,13 @@
 </li>
 <li><p><strong>隔离性</strong><br>事务的隔离性，基于原子性和一致性，因为事物是原子化，量子化的，所以，事物可以有多个原子包的形式并发执行，但是，每个事务相互隔离(具体的隔离级别是按数据库的情况定的)。</p>
 <blockquote>
-<p>当数据库上有多个事务同时执行的时候，就可能出现<code>脏读(dirt readd)</code>、<code>不可重复读(non-repeatable reareadd)</code>和<code>幻读(phantom read d)</code></p>
+<p>当数据库上有多个事务同时执行的时候，就可能出现<code>脏读(dirty read)</code>、<code>不可重复读(non-repeatable read)</code>和<code>幻读(phantom read)</code></p>
 </blockquote>
 </li>
 <li><p><strong>持久性</strong><br>事务只要提交了，数据库状态会永远发生变化，即使宕机了。</p>
 </li>
 </ul>
-<h2 id="二、隔离性特别说明"><a href="#二、隔离性特别说明" class="headerlink" title="二、隔离性特别说明"></a>二、隔离性特别说明</h2><h3 id="隔离引发的问题"><a href="#隔离引发的问题" class="headerlink" title="隔离引发的问题"></a>隔离引发的问题</h3><p><code>脏读(dirty read)</code> <code>不可重复读(non-repeatable rearead)</code> <code>幻读(phantom read)</code></p>
+<h2 id="二、隔离性特别说明"><a href="#二、隔离性特别说明" class="headerlink" title="二、隔离性特别说明"></a>二、隔离性特别说明</h2><h3 id="隔离引发的问题"><a href="#隔离引发的问题" class="headerlink" title="隔离引发的问题"></a>隔离引发的问题</h3><p><code>脏读(dirty read)</code> <code>不可重复读(non-repeatable read)</code> <code>幻读(phantom read)</code></p>
 <h3 id="隔离的四个级别"><a href="#隔离的四个级别" class="headerlink" title="隔离的四个级别"></a>隔离的四个级别</h3><p><code>读未提交(read uncommitted)</code> <code>读提交(read committed)</code> <code>可重复读(repeatable read)</code> <code>串行化(serializable)</code></p>
 <ul>
 <li><p><strong>读未提交</strong><br>一个事务还没提交时，变更就可以被别的事务看到。</p>
@@ -231,6 +231,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/06/07/database-more/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">数据库基础概念 索引</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -287,7 +294,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        7
                     </p>
                 </div>
             </div>
@@ -307,7 +314,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        12
                     </p>
                 </div>
             </div>
@@ -388,7 +395,7 @@
                 <span class="level-item">技术</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">3</span>
+                <span class="level-item tag">5</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/日记/">
@@ -418,7 +425,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/创业/" style="font-size: 10px;">创业</a> <a href="/tags/思路/" style="font-size: 10px;">思路</a> <a href="/tags/数据库/" style="font-size: 20px;">数据库</a> <a href="/tags/消息队列/" style="font-size: 10px;">消息队列</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/观点/" style="font-size: 10px;">观点</a> <a href="/tags/设计/" style="font-size: 10px;">设计</a>
+        <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/创业/" style="font-size: 10px;">创业</a> <a href="/tags/思路/" style="font-size: 10px;">思路</a> <a href="/tags/数据库/" style="font-size: 20px;">数据库</a> <a href="/tags/消息队列/" style="font-size: 10px;">消息队列</a> <a href="/tags/源码/" style="font-size: 10px;">源码</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/索引/" style="font-size: 10px;">索引</a> <a href="/tags/观点/" style="font-size: 10px;">观点</a> <a href="/tags/设计/" style="font-size: 10px;">设计</a>
     </div>
 </div>
 
@@ -432,6 +439,32 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-25T05:41:59.000Z">2019-06-25</time></div>
+                    <a href="/2019/06/25/node-schedule-read/" class="has-link-black-ter is-size-6">node-schedule的一些分析</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术/">技术</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T05:16:57.000Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/database-more/" class="has-link-black-ter is-size-6">数据库基础概念 索引</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术/">技术</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -472,32 +505,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-24T08:02:12.000Z">2019-05-24</time></div>
-                    <a href="/2019/05/24/start-up-business/" class="has-link-black-ter is-size-6">创业的一些参考</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/杂谈/">杂谈</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-23T11:19:27.000Z">2019-05-23</time></div>
-                    <a href="/2019/05/23/some-talk/" class="has-link-black-ter is-size-6">996?</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/日记/">日记</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -516,7 +523,7 @@
                     <span class="level-item">六月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -546,6 +553,20 @@
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/MySQL/">
+                        <span class="tag">MySQL</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Node-js/">
+                        <span class="tag">Node.js</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/redis/">
                         <span class="tag">redis</span>
                         <span class="tag is-grey">1</span>
@@ -569,7 +590,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/数据库/">
                         <span class="tag">数据库</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -581,8 +602,22 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/源码/">
+                        <span class="tag">源码</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/笔记/">
                         <span class="tag">笔记</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/索引/">
+                        <span class="tag">索引</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -628,6 +663,32 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-25T05:41:59.000Z">2019-06-25</time></div>
+                    <a href="/2019/06/25/node-schedule-read/" class="has-link-black-ter is-size-6">node-schedule的一些分析</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术/">技术</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-07T05:16:57.000Z">2019-06-07</time></div>
+                    <a href="/2019/06/07/database-more/" class="has-link-black-ter is-size-6">数据库基础概念 索引</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术/">技术</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-06T09:24:27.000Z">2019-06-06</time></div>
                     <a href="/2019/06/06/database-basic/" class="has-link-black-ter is-size-6">数据库基础概念</a>
                     <p class="is-size-7 is-uppercase">
@@ -663,32 +724,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-24T08:02:12.000Z">2019-05-24</time></div>
-                    <a href="/2019/05/24/start-up-business/" class="has-link-black-ter is-size-6">创业的一些参考</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/杂谈/">杂谈</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-23T11:19:27.000Z">2019-05-23</time></div>
-                    <a href="/2019/05/23/some-talk/" class="has-link-black-ter is-size-6">996?</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/日记/">日记</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -707,7 +742,7 @@
                     <span class="level-item">六月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -737,6 +772,20 @@
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/MySQL/">
+                        <span class="tag">MySQL</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Node-js/">
+                        <span class="tag">Node.js</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/redis/">
                         <span class="tag">redis</span>
                         <span class="tag is-grey">1</span>
@@ -760,7 +809,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/数据库/">
                         <span class="tag">数据库</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -772,8 +821,22 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/源码/">
+                        <span class="tag">源码</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/笔记/">
                         <span class="tag">笔记</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/索引/">
+                        <span class="tag">索引</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>

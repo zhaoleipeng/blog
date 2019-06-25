@@ -19,7 +19,7 @@ toc: true
 
 - **隔离性**
   事务的隔离性，基于原子性和一致性，因为事物是原子化，量子化的，所以，事物可以有多个原子包的形式并发执行，但是，每个事务相互隔离(具体的隔离级别是按数据库的情况定的)。
-  > 当数据库上有多个事务同时执行的时候，就可能出现`脏读(dirt readd)`、`不可重复读(non-repeatable reareadd)`和`幻读(phantom read d)`
+  > 当数据库上有多个事务同时执行的时候，就可能出现`脏读(dirty read)`、`不可重复读(non-repeatable read)`和`幻读(phantom read)`
 
 - **持久性**
   事务只要提交了，数据库状态会永远发生变化，即使宕机了。
@@ -28,7 +28,7 @@ toc: true
 
 ### 隔离引发的问题
 
-`脏读(dirty read)` `不可重复读(non-repeatable rearead)` `幻读(phantom read)`
+`脏读(dirty read)` `不可重复读(non-repeatable read)` `幻读(phantom read)`
 
 ### 隔离的四个级别
 
