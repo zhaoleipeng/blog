@@ -1,7 +1,9 @@
 ---
 title: macos上安装mysql
 date: 2019-09-20 14:26:08
-tags:
+tags: ['数据库']
+categories: 技术
+toc: true
 ---
 
 整体安装是当下最新版的`mysql`是`8.0.17`，不能保证其他版本兼容。
