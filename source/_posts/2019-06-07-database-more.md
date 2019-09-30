@@ -6,12 +6,14 @@ categories: 技术
 toc: true
 ---
 
+这段时间正好在看极客时间的`MySQL实战45讲`，听得有点上头，感觉蛮有意思的，就顺带整理一些索引相关的知识。
+
+<!-- more -->
 ## 常见的索引类型
 
 - **MySQL的索引**
   `B+Tree` 和 `BTree`
 
-<!-- more -->
 - **B+Tree**
   
 - **BTree**
