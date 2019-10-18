@@ -1,5 +1,5 @@
 ---
-title: REDIS（一）：基础介绍
+title: Redis（一）：基础介绍
 date: 2019-05-24 18:07:41
 tags: [ 数据库, redis ]
 categories: [ 技术 ]
